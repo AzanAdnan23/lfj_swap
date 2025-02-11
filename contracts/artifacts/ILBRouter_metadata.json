@@ -1,0 +1,146 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isReversed",
+						"type": "bool"
+					}
+				],
+				"name": "getSwapOut",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[]",
+								"name": "pairBinSteps",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum ILBRouter.Version[]",
+								"name": "versions",
+								"type": "uint8[]"
+							},
+							{
+								"internalType": "contract IERC20[]",
+								"name": "tokenPath",
+								"type": "address[]"
+							}
+						],
+						"internalType": "struct ILBRouter.Path",
+						"name": "path",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "swapExactNATIVEForTokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/swap.sol": "ILBRouter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/swap.sol": {
+			"keccak256": "0x09ed705b7d883f61e87153a738a883f9bd6efa737282838718cf2feee3f58511",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://370f1988c669dbedc14db82a1523d49b9019f63fd900179236b027e690f630cd",
+				"dweb:/ipfs/QmYuEcZreZFaznSzoTP9L8SSjwxs5ANkrTvbT1swpCovQw"
+			]
+		}
+	},
+	"version": 1
+}
